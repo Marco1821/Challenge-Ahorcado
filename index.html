@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/25c9882322.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <title>Juego del ahorcado</title>
+</head>
+<body>
+    <img src="imagenes/Logo-alura.png" alt="Logo de alura" id="logo-alura">
+    
+    <div id="pantalla-inicio">
+        <h1 id="titulo">Juego del ahorcado</h1>
+        <img src="imagenes/ahorcado.jpg" alt="dibujo de ahorcado" id="ahorcado">
+        <button id="iniciar-juego" class="boton" onclick="juego()">Iniciar Juego</button>
+        <button id="agregar-palabra" class="boton" onclick="agregar_palabra()">Agregar Nueva Palabra</button>
+    </div>
+
+    <div id="juego-ahorcado">
+        <canvas width="1000px" height="400px" id="canvas"></canvas>
+        <div id="letras-incorrectas"></div>
+        <div id="botones-juego">
+            <button onclick="nuevo_juego()" class="boton" id="nuevo-juego">Nuevo juego</button>
+            <button onclick="desistir()" class="boton" id="desistir">Desistir</button>
+        </div>
+    </div>
+
+    <div id="agregar-nueva-palabra">
+        <input type="text" id="nueva-palabra" placeholder="Ingrese una palabra" maxlength="12">
+        <div id="advertencia">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            Máximo 12 letras
+        </div>
+        <div id="botones-palabra">
+            <button id="guardar_empezar" class="boton" onclick="guardar_empezar()">Guardar y empezar</button>
+            <button id="cancelar" class="boton" onclick="cancelar()">Cancelar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

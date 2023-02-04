@@ -1,0 +1,131 @@
+body {
+    background-color: #121619;
+}
+
+#logo-alura {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+#pantalla-inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5%;
+}
+
+#pantalla-inicio h1{
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #FF9000;
+}
+
+.boton {
+    padding: 0.8rem 1.5rem;
+    border-radius: 18px;
+    border-color: #FF9000;
+    color: #FF9000;
+    background-color: #121619;
+}
+
+#iniciar-juego {
+    padding: 1.5rem 6rem;
+    background-color: #FF9000;
+    border: none;
+    color: #121619;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+#juego-ahorcado {
+    display: none;
+}
+
+canvas {
+    position: relative;
+    left: calc(50% - 500px);
+}
+
+#letras-incorrectas {
+    color: rgba(228, 226, 222, 0.863);
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'Love Ya Like A Sister', cursive;
+    letter-spacing: 1.2rem;
+    height: 2rem;
+}
+
+#botones-juego {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#botones-juego button {
+    width: 45%;
+    margin-top: 4rem;
+    font-size: 1rem;
+}
+
+#nuevo-juego {
+    background-color: #FF9000;
+    border: none;
+    color: #121619;
+    font-weight: bold;
+}
+
+#agregar-nueva-palabra {
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    display: none;
+}
+
+#nueva-palabra {
+    border: none;
+    background-color: transparent;
+    padding: 15px;
+    outline: none;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'Love Ya Like A Sister', cursive;
+    text-align: left;
+}
+
+#nueva-palabra::placeholder {
+    color: rgba(255, 255, 255, 0.719);
+}
+
+#advertencia {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: rgba(255, 255, 255);
+    opacity: 0.9;
+    margin-top: 30%;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+#guardar_empezar, #cancelar {
+    width: 45%;
+    padding: 1.1rem 0;
+}
+
+#guardar_empezar {
+    background-color: #FF9000;
+    border: none;
+    color: #121619;
+    font-weight: bold;
+    margin-right: 10px;
+}
